@@ -1,5 +1,4 @@
-﻿// Program.cs
-using System;
+﻿using System;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -9,11 +8,11 @@ class Program
 {
     static async Task Main()
     {
-        // Tajmer za čišćenje keša ostaje isti, jer radi u pozadini
         Cache.cacheCleanupTimer.Elapsed += (sender, e) => Cache.CacheCleanup();
 
-        // Pokrećemo i čekamo asinhroni server
-        await HttpServer.StartServerAsync();
+        await HttpServer.StartServerAsync(); //pauziraj main, ali ne blokiraj ceo program
+                                             //sacekaj da metoda zavrsi, a za to vreme
+                                             //ako ima nesto drugo da se radi, radi to
     }
 
     public static async Task ProcessRequestAsync(HttpListenerContext context)
@@ -43,7 +42,6 @@ class Program
             }
             else
             {
-                // Asinhrono pozivamo logiku za pretragu bestselera
                 responseString = await BestsellerSearch.GetBestsellersByListAsync(query);
                 Console.WriteLine($"[LOG] Zahtev za listu '{query}' je uspešno obrađen i odgovor je poslat.");
             }
@@ -53,13 +51,12 @@ class Program
             context.Response.ContentType = "text/html";
             Stream output = context.Response.OutputStream;
 
-            // Asinhrono slanje odgovora klijentu
-            await output.WriteAsync(buffer, 0, buffer.Length);
+            await output.WriteAsync(buffer, 0, buffer.Length); // ne blokira server dok se podaci salju preko mreze
             output.Close();
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"[FATALNA GREŠKA] Desila se greška pri obradi zahteva: {ex.Message}");
+            Console.WriteLine($"[FATALNA GRESKA] Desila se greska pri obradi zahteva: {ex.Message}");
             if (context.Response.OutputStream.CanWrite)
             {
                 context.Response.OutputStream.Close();

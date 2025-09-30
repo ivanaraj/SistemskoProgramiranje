@@ -1,20 +1,17 @@
-﻿// BestsellerSearch.cs
-using System;
+﻿using System;
 using System.Net;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 public class BestsellerSearch
 {
-    // !!! VAŽNO: Unesite vaš NYT API ključ ovde !!!
     private static readonly string ApiKey = "MI4GPkmyXlMiOqH6t8FaXZ74qXS0bWd9";
 
     public static async Task<string> GetBestsellersByListAsync(string listNameQuery)
     {
         Console.WriteLine($"[LOG] Obrada zahteva za listu: '{listNameQuery}'");
 
-        // Provera keša uz zaključavanje. Ovo ostaje sinhrono jer je brza operacija.
-        lock (Cache.cacheLock)
+        lock (Cache.cacheLock) //jako brza operacija, zato je ostala sinhrona
         {
             if (Cache.cache.ContainsKey(listNameQuery))
             {
@@ -30,8 +27,8 @@ public class BestsellerSearch
             string url = $"https://api.nytimes.com/svc/books/v3/lists/current/{Uri.EscapeDataString(listNameQuery)}.json?api-key={ApiKey}";
             HttpServer.client.Headers.Add("User-Agent", "C# App");
 
-            // Asinhrono preuzimanje podataka sa NYT API-ja
-            string responseBody = await HttpServer.client.DownloadStringTaskAsync(url);
+            string responseBody = await HttpServer.client.DownloadStringTaskAsync(url); //await pauzira ovu metodu dok se podaci ne preuzmu sa interneta,
+                                                                                        //ali oslobadja nit da radi druge poslove
 
             var nytResponse = JsonConvert.DeserializeObject<NYTBestsellerResponse>(responseBody);
 
@@ -55,7 +52,6 @@ public class BestsellerSearch
             }
             result += "</body></html>";
 
-            // Dodavanje u keš (sinhrono sa zaključavanjem)
             lock (Cache.cacheLock)
             {
                 if (Cache.cacheIsEmpty == 0)
@@ -84,7 +80,7 @@ public class BestsellerSearch
                 if (errorResponse.StatusCode == HttpStatusCode.NotFound)
                 {
                     Console.WriteLine($"[GRESKA] Lista '{listNameQuery}' nije pronadjena.");
-                    return $"<html><body><h1>Greška 404</h1><p>Bestseler lista pod nazivom '{listNameQuery}' nije pronadjena. Proverite ime liste.</p></body></html>";
+                    return $"<html><body><h1>Greska 404</h1><p>Bestseler lista pod nazivom '{listNameQuery}' nije pronadjena. Proverite ime liste.</p></body></html>";
                 }
             }
 

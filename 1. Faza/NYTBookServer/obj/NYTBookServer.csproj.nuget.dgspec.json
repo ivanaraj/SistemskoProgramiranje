@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\1. Faza\\NYTBookServer\\NYTBookServer.csproj": {}
+    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\1. Faza\\NYTBookServer\\NYTBookServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\1. Faza\\NYTBookServer\\NYTBookServer.csproj": {
+    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\1. Faza\\NYTBookServer\\NYTBookServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\1. Faza\\NYTBookServer\\NYTBookServer.csproj",
+        "projectUniqueName": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\1. Faza\\NYTBookServer\\NYTBookServer.csproj",
         "projectName": "NYTBookServer",
-        "projectPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\1. Faza\\NYTBookServer\\NYTBookServer.csproj",
+        "projectPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\1. Faza\\NYTBookServer\\NYTBookServer.csproj",
         "packagesPath": "C:\\Users\\Ivana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\1. Faza\\NYTBookServer\\obj\\",
+        "outputPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\1. Faza\\NYTBookServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

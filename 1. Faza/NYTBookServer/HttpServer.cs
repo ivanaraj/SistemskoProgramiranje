@@ -1,11 +1,12 @@
-﻿// HttpServer.cs
-using System;
+﻿using System;
 using System.Net;
 using System.Threading;
 
 class HttpServer
 {
-    public static WebClient client = new WebClient();
+    public static WebClient client = new WebClient(); //za slanje zahteva drugim serverima i preuzimanje podataka sa interneta,
+                                                      //koristi se samo jedna instanca koju ce deliti cela aplikacija,
+                                                      //za kontaktiranje NYT Books API-ja
 
     public static void StartServer()
     {
@@ -19,8 +20,8 @@ class HttpServer
         {
             try
             {
-                HttpListenerContext context = listener.GetContext();
-                // Svaki novi zahtev se obrađuje na posebnoj niti iz ThreadPool-a
+                HttpListenerContext context = listener.GetContext(); // blokira dok ne stigne novi zahtev od browser-a,
+                                                                     // kada stigne, podaci se smestaju u context i program nastavlja dalje
                 ThreadPool.QueueUserWorkItem(new WaitCallback(Program.ProcessRequest), context);
             }
             catch (Exception ex)

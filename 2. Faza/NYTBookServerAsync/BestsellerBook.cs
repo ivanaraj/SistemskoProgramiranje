@@ -1,5 +1,4 @@
-﻿// BestsellerBook.cs
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 public class BestsellerBook
 {

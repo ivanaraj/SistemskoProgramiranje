@@ -1,5 +1,4 @@
-﻿// NYTBestsellerResponse.cs
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 public class NYTBestsellerResponse
 {

@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\2. Faza\\NYTBookServerAsync\\",
+  "WorkspaceRootPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\projekat\\2. faza\\nytbookserverasync\\bestsellersearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\sistemskoprogramiranje\\2. faza\\nytbookserverasync\\cache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:cache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\sistemskoprogramiranje\\2. faza\\nytbookserverasync\\bestsellersearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:bestsellersearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\projekat\\2. faza\\nytbookserverasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\sistemskoprogramiranje\\2. faza\\nytbookserverasync\\httpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:httpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\sistemskoprogramiranje\\2. faza\\nytbookserverasync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\projekat\\2. faza\\nytbookserverasync\\httpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:httpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\sistemskoprogramiranje\\2. faza\\nytbookserverasync\\bestsellerlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:bestsellerlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\sistemskoprogramiranje\\2. faza\\nytbookserverasync\\nytbestsellerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:nytbestsellerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\sistemskoprogramiranje\\2. faza\\nytbookserverasync\\bestsellerbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A781B212-A0BA-4A03-AFF6-BACD63057E6F}|NYTBookServerAsync.csproj|solutionrelative:bestsellerbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BestsellerSearch.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\2. Faza\\NYTBookServerAsync\\BestsellerSearch.cs",
-              "RelativeDocumentMoniker": "BestsellerSearch.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\2. Faza\\NYTBookServerAsync\\BestsellerSearch.cs",
-              "RelativeToolTip": "BestsellerSearch.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T18:12:19.713Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "HttpServer.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\2. Faza\\NYTBookServerAsync\\HttpServer.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\HttpServer.cs",
               "RelativeDocumentMoniker": "HttpServer.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\2. Faza\\NYTBookServerAsync\\HttpServer.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\HttpServer.cs",
               "RelativeToolTip": "HttpServer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAACFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T18:11:14.495Z",
+              "WhenOpened": "2025-09-30T15:10:45.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BestsellerSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\BestsellerSearch.cs",
+              "RelativeDocumentMoniker": "BestsellerSearch.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\BestsellerSearch.cs",
+              "RelativeToolTip": "BestsellerSearch.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAwwFIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T14:37:08.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NYTBestsellerResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\NYTBestsellerResponse.cs",
+              "RelativeDocumentMoniker": "NYTBestsellerResponse.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\NYTBestsellerResponse.cs",
+              "RelativeToolTip": "NYTBestsellerResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T15:11:48.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cache.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\Cache.cs",
+              "RelativeDocumentMoniker": "Cache.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\Cache.cs",
+              "RelativeToolTip": "Cache.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T15:10:25.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BestsellerList.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\BestsellerList.cs",
+              "RelativeDocumentMoniker": "BestsellerList.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\BestsellerList.cs",
+              "RelativeToolTip": "BestsellerList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T15:08:23.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BestsellerBook.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\BestsellerBook.cs",
+              "RelativeDocumentMoniker": "BestsellerBook.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\BestsellerBook.cs",
+              "RelativeToolTip": "BestsellerBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T15:08:19.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\2. Faza\\NYTBookServerAsync\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\2. Faza\\NYTBookServerAsync\\Program.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\2. Faza\\NYTBookServerAsync\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDUAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T18:10:24.94Z",
               "EditorCaption": ""

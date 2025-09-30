@@ -1,18 +1,15 @@
-﻿// BestsellerSearch.cs
-using System;
+﻿using System;
 using System.Net;
 using Newtonsoft.Json;
 
 public class BestsellerSearch
 {
-    // !!! VAŽNO: Unesite vaš NYT API ključ ovde !!!
     private static readonly string ApiKey = "MI4GPkmyXlMiOqH6t8FaXZ74qXS0bWd9";
 
     public static string GetBestsellersByList(string listNameQuery)
     {
         Console.WriteLine($"[LOG] Obrada zahteva za listu: '{listNameQuery}'");
 
-        // Provera keša uz zaključavanje
         lock (Cache.cacheLock)
         {
             if (Cache.cache.ContainsKey(listNameQuery))
@@ -26,11 +23,10 @@ public class BestsellerSearch
 
         try
         {
-            // Novi endpoint u skladu sa dokumentacijom
             string url = $"https://api.nytimes.com/svc/books/v3/lists/current/{Uri.EscapeDataString(listNameQuery)}.json?api-key={ApiKey}";
 
             HttpServer.client.Headers.Add("User-Agent", "C# App");
-            string responseBody = HttpServer.client.DownloadString(url);
+            string responseBody = HttpServer.client.DownloadString(url); //dobijamo string u json formatu
 
             var nytResponse = JsonConvert.DeserializeObject<NYTBestsellerResponse>(responseBody);
 
@@ -40,7 +36,6 @@ public class BestsellerSearch
                 return "<html><body><h1>Greška</h1><p>Nema knjiga za trazenu bestseler listu, ili ime liste nije ispravno.</p></body></html>";
             }
 
-            // Kreiranje HTML odgovora sa podacima o bestselerima
             string result = "<html><head><title>Bestseleri: " + nytResponse.Results.DisplayName + "</title></head><body>";
             result += $"<h1>Prikaz bestselera sa liste: {nytResponse.Results.DisplayName}</h1>";
             foreach (var book in nytResponse.Results.Books)
@@ -55,7 +50,6 @@ public class BestsellerSearch
             }
             result += "</body></html>";
 
-            // Dodavanje u keš
             lock (Cache.cacheLock)
             {
                 if (Cache.cacheIsEmpty == 0)

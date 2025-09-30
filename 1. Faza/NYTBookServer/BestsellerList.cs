@@ -1,5 +1,4 @@
-﻿// BestsellerList.cs
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
 public class BestsellerList

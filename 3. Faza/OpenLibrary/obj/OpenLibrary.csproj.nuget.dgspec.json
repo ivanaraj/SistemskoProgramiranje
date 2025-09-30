@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\3. Faza\\OpenLibrary\\OpenLibrary.csproj": {}
+    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\3. Faza\\OpenLibrary\\OpenLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\3. Faza\\OpenLibrary\\OpenLibrary.csproj": {
+    "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\3. Faza\\OpenLibrary\\OpenLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\3. Faza\\OpenLibrary\\OpenLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\3. Faza\\OpenLibrary\\OpenLibrary.csproj",
         "projectName": "OpenLibrary",
-        "projectPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\3. Faza\\OpenLibrary\\OpenLibrary.csproj",
+        "projectPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\3. Faza\\OpenLibrary\\OpenLibrary.csproj",
         "packagesPath": "C:\\Users\\Ivana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\Projekat\\3. Faza\\OpenLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemsko programiranje\\SistemskoProgramiranje\\3. Faza\\OpenLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

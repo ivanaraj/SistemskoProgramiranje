@@ -11,23 +11,21 @@ namespace OpenLibraryApp
             _observerName = name;
         }
 
-        public void OnNext(Book book)
+        public void OnNext(Book book) //poziva se svaki put kada stigne nova knjiga 
         {
-            // Log uspešno obrađenog zahteva (jedne knjige)
             Console.WriteLine($"\n--- {_observerName} | Novi podatak ---");
             Console.WriteLine(book.ToString());
         }
 
-        public void OnError(Exception error)
+        public void OnError(Exception error) //poziva se ako dodje do greske u toku
         {
             // Log greške
-            Console.WriteLine($"[ERROR] {_observerName}: Došlo je do greške u toku! Poruka: {error.Message}");
+            Console.WriteLine($"[ERROR] {_observerName}: Doslo je do greske u toku! Poruka: {error.Message}");
         }
 
-        public void OnCompleted()
+        public void OnCompleted() //poziva se kada je tok zavrsen
         {
-            // Log uspešnog završetka
-            Console.WriteLine($"--- {_observerName}: Pretraga je uspešno završena. ---");
+            Console.WriteLine($"--- {_observerName}: Pretraga je uspesno zavrsena. ---");
         }
     }
 }

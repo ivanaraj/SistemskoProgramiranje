@@ -9,7 +9,7 @@ public class Program
     public static async Task Main()
     {
         Console.WriteLine("--- Aplikacija za pretragu knjiga po autoru ---");
-        Console.WriteLine("Unesite ime autora (ili više autora odvojenih zarezom, npr. 'J R R Tolkien, Isaac Asimov'):");
+        Console.WriteLine("Unesite ime autora (ili vise autora odvojenih zarezom, npr. 'J R R Tolkien, Isaac Asimov'):");
         string input = Console.ReadLine();
 
         var authors = input?.Split(',', StringSplitOptions.RemoveEmptyEntries)
@@ -23,30 +23,30 @@ public class Program
             return;
         }
 
-        Console.WriteLine($"\nPokrećem pretragu za: {string.Join(", ", authors)}\n");
+        Console.WriteLine($"\nPokrecem pretragu za: {string.Join(", ", authors)}\n");
 
-        // Kreiranje liste reaktivnih tokova, po jedan za svakog autora
+        // kreiranje liste reaktivnih tokova, po jedan za svakog autora
         var streams = authors.Select(author => new AuthorWorksStream(author)).ToList();
 
-        // Spajanje svih tokova u jedan jedinstveni tok pomoću Observable.Merge
+        // spajanje svih tokova u jedan jedinstveni tok pomocu Observable.Merge
         var combinedStream = Observable.Merge(streams.Cast<IObservable<Book>>());
 
-        // Kreiranje posmatrača
-        var bookObserver = new BookObserver("Glavni posmatrač");
+        // kreiranje posmatraca
+        var bookObserver = new BookObserver("Glavni posmatrac");
 
-        // Pretplata posmatrača na spojeni tok
+        // pretplata posmatraca na spojeni tok
         var subscription = combinedStream.Subscribe(bookObserver);
 
-        // Pokretanje asinhronog pribavljanja podataka za sve tokove paralelno
+        // pokretanje asinhronog pribavljanja podataka za sve tokove paralelno
         var fetchTasks = streams.Select(s => s.GetWorksAsync()).ToList();
 
-        // Čekanje da se svi zadaci završe
+        // cekanje da se svi zadaci zavrse
         await Task.WhenAll(fetchTasks);
 
         Console.WriteLine("\nSvi podaci su preuzeti. Pritisnite ENTER za izlaz...");
         Console.ReadLine();
 
-        // Oslobađanje resursa
+        // oslobadjanje resursa
         subscription.Dispose();
     }
 }

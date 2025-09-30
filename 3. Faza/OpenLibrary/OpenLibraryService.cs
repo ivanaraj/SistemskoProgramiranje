@@ -9,24 +9,25 @@ namespace OpenLibraryApp
 {
     public class OpenLibraryService
     {
-        private readonly HttpClient _client = new HttpClient();
+        private readonly HttpClient _client = new HttpClient(); //kao internet browser, koristimo ga jednom i to za sve zahteve
+
         private const string BaseUrl = "https://openlibrary.org/search.json";
 
         public async Task<IEnumerable<Book>> SearchWorksByAuthorAsync(string authorName)
         {
-            // URL enkodiranje imena autora za ispravan API poziv
-            var encodedAuthorName = Uri.EscapeDataString(authorName);
-            var url = $"{BaseUrl}?author={encodedAuthorName}&limit=20"; // Limitiramo na 20 rezultata
+            var encodedAuthorName = Uri.EscapeDataString(authorName); // URL enkodiranje imena autora za ispravan API poziv
+            var url = $"{BaseUrl}?author={encodedAuthorName}&limit=20"; // sastavljanje kompletnog URL-a za poziv i limitiranje na 20 rezultata
 
             try
             {
-                Console.WriteLine($"[LOG] Šalje se zahtev na: {url}");
-                var response = await _client.GetAsync(url);
-                response.EnsureSuccessStatusCode();
-                var content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"[LOG] Salje se zahtev na: {url}");
 
-                var jsonResponse = JObject.Parse(content);
-                var docsJson = jsonResponse["docs"] as JArray;
+                var response = await _client.GetAsync(url); //salje se get zahtev i ceka se odgovor
+                response.EnsureSuccessStatusCode(); //provera da li je odgovor ok
+                var content = await response.Content.ReadAsStringAsync(); //citanje sadrzaja kao string (bice JSON)
+
+                var jsonResponse = JObject.Parse(content); //parsiranje tekstualnog JSON-a u objekat koji mozemo da pretrazujemo
+                var docsJson = jsonResponse["docs"] as JArray; //iz odgovora izvlacimo niz dokumenata, gde je svaki dokument jedna knjiga
 
                 if (docsJson == null)
                 {
@@ -35,7 +36,7 @@ namespace OpenLibraryApp
 
                 Console.WriteLine($"[LOG] Primljeno {docsJson.Count} rezultata za autora '{authorName}'.");
 
-                // Mapiranje JSON-a u listu Book objekata
+                // mapiranje: pretvaranje svakog JSON objekta u instancu klase Book
                 return docsJson.Select(doc => new Book
                 {
                     Title = (string)doc["title"],
@@ -48,7 +49,7 @@ namespace OpenLibraryApp
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"[ERROR] Greška pri pretrazi za autora '{authorName}': {ex.Message}");
+                Console.WriteLine($"[ERROR] Greska pri pretrazi za autora '{authorName}': {ex.Message}");
                 return Enumerable.Empty<Book>();
             }
         }

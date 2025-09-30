@@ -1,0 +1,32 @@
+# Build fajlovi
+bin/
+obj/
+out/
+
+# Korisničke postavke
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Debug / release folderi
+*.pdb
+*.cache
+*.log
+
+# Visual Studio fajlovi
+.vs/
+
+# Rider / JetBrains
+.idea/
+
+# Paket menadžeri
+packages/
+*.nupkg
+
+# Konfiguracije
+appsettings.Development.json
+
+# OS fajlovi
+.DS_Store
+Thumbs.db
